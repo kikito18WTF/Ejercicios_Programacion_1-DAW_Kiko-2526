@@ -13,7 +13,6 @@ public class Ejercicio3 {
         int num= entrada.nextInt();
 
         if (num>0){
-
             System.out.println("El "+ num + " es positivo");
         } else if (num<0) {
             System.out.println("El "+ num + " es negativo");
