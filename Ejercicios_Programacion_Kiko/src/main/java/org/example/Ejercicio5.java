@@ -9,9 +9,9 @@ public class Ejercicio5 {
 
         Scanner entrada = new Scanner(System.in);
 
-        int dividendo = 0;
-        int divisor = 0;
-        int resultado = 0;
+        int dividendo ;
+        int divisor ;
+        int resultado ;
 
         try {
 

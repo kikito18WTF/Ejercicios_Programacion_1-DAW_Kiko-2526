@@ -9,11 +9,11 @@ public class Ejercicio4 {
 
         Scanner entrada = new Scanner(System.in);
 
-        int num1=0;
-        int num2=0;
-        int num3=0;
+        int num1 = 0;
+        int num2 = 0;
+        int num3 = 0;
 
-        try{
+        try {
 
             System.out.println("Introduce el primer numero:");
             num1 = entrada.nextInt();
@@ -28,28 +28,24 @@ public class Ejercicio4 {
         }
 
 
-        if (num1 == num2 || num1 == num3 || num2 == num3 ){
+        if (num1 == num2 || num1 == num3 || num2 == num3) {
             System.out.println("ERROR: hay números introducidos que son iguales");
-        }else {
+        } else {
 
             int minimo = num1;
             if (num2 < minimo) {
                 minimo = num2;
             }
 
-            if (num3 < minimo){
+            if (num3 < minimo) {
                 minimo = num3;
 
             }
 
-            System.out.println("El numero " +minimo+ " es el minimo" );
+            System.out.println("El numero " + minimo + " es el minimo");
 
 
         }
-
     }
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> a943c520e45ad4d6c1e646b17e6ffe61504b509b
+    }
+
