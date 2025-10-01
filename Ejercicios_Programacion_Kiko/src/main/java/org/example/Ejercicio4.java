@@ -1,6 +1,6 @@
 package org.example;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
+
 import java.util.Scanner;
 
 public class Ejercicio4 {
@@ -16,11 +16,11 @@ public class Ejercicio4 {
         try{
 
             System.out.println("Introduce el primer numero:");
-             num1 = entrada.nextInt();
+            num1 = entrada.nextInt();
             System.out.println("Introduce el segundo numero: ");
-             num2 = entrada.nextInt();
+            num2 = entrada.nextInt();
             System.out.println("Introduce el tercer numero: ");
-             num3 = entrada.nextInt();
+            num3 = entrada.nextInt();
 
 
         } catch (Exception err) {
@@ -35,13 +35,14 @@ public class Ejercicio4 {
             int minimo = num1;
             if (num2 < minimo) {
                 minimo = num2;
-                System.out.println("El numero " + num2 + " es el minimo ");
-            } else if (num3 < minimo) {
-                minimo = num3;
-                System.out.println("El numero " + num3 + " es el minimo ");
-            } else {
-                System.out.println("El numero " + minimo + " es el minimo ");
             }
+
+            if (num3 < minimo){
+                minimo = num3;
+
+            }
+
+            System.out.println("El numero " +minimo+ " es el minimo" );
 
 
         }
