@@ -48,4 +48,8 @@ public class Ejercicio4 {
         }
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a943c520e45ad4d6c1e646b17e6ffe61504b509b
