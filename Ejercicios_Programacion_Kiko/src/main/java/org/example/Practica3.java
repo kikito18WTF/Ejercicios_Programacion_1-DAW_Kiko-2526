@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 public class Practica3 {
@@ -11,14 +11,16 @@ public class Practica3 {
 
         System.out.println("***BIENVENIDO AL RATÓN JUGUETÓN***");
 
-        int altura = 0;
+        int altura ;
+        int altura_restante;
 
-       int altura_restante = 140 - altura;
+
 
         try{
             System.out.println("Leyendo altura (cm)...");
             altura = entrada.nextInt();
 
+             altura_restante = 140 - altura;
             if (altura < 0 || altura > 230){
                 System.out.println("ERROR DE LECTURA. BAJA DE LA BASCULA Y VUELVE A SUBIR...");
             } else if (altura < 140) {
@@ -38,7 +40,7 @@ public class Practica3 {
                     System.out.println("Pesas " + peso + " kg. Peso minimo calculado: " + peso_minimoo + " kg. !SUBE A LA ATRACCION!");
                 }
             }
-        }catch (InputMismatchException er1){
+        }catch (Exception err1){
             System.out.println("ERROR. Introduce numeros, no letras");
         }
 
