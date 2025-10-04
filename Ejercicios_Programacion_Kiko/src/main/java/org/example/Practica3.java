@@ -48,7 +48,7 @@ public class Practica3 {
                 // Si mete letras en lugar de numeros, error y se termina
             }
 
-            double peso_minimo = (altura * 2)/8.0;  // Calculo para calcular el peso minimo permitido segun altura
+            double peso_minimo = (altura * 2)/8.0;  // Calcula el peso minimo permitido segun altura
 
 
             int peso_maximo = peso - 120;  // Calcula cuantos kilos sobrepasa el limite de 120 kg
