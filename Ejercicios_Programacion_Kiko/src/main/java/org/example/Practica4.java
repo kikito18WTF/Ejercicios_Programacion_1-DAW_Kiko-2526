@@ -71,11 +71,11 @@ public class Practica4 {
                 System.out.println("  " + multiplicando);
                 System.out.println("x " + multiplicador);
                 System.out.println("--------");
-                System.out.println("  " + resultado_derecha);   // Primer parcial
-                System.out.println(resultado_centro + "x");      // Segundo parcial (una x)
-                System.out.println(resultado_izquierda + "xx");  // Tercer parcial (dos xx)
+                System.out.println("  " + resultado_derecha);
+                System.out.println(resultado_centro + "x");
+                System.out.println(resultado_izquierda + "xx");
                 System.out.println("-------");
-                System.out.println(resultado_final);              // Resultado total
+                System.out.println(resultado_final);
 
                 repetir = false; // Si todo ha ido bien no se repite
 
