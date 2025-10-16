@@ -29,21 +29,21 @@ public class Practica4 {
                 // Comprueba que ambos numeros tengan 3 cifras ya sea positivos o negativos
                 if (((multiplicando >= 100 && multiplicando <= 999) || (multiplicando <= -100 && multiplicando >= -999)) &&
                         ((multiplicador >= 100 && multiplicador <= 999) || (multiplicador <= -100 && multiplicador >= -999))) {
-                    // Si la condición se cumple, no hace nada (los datos son válidos)
+                    // Si la condición se cumple, no hace nada , sigue hacia adelante
 
 
                 // Convierte el multiplicador a texto  para poder extraer sus cifras
                 String multiplicador2 = Integer.toString(multiplicador);
 
-                // Si el número es negativo, saltamos el signo "-" en los substring para que no cuente como una posicion
+                // Si el número es negativo, saltamos el signo negativo para que no ocupe una posicion
                 if (multiplicador < 0) {
-                    String multiplicador_izq = multiplicador2.substring(1, 2);  // Centenas (posición 1)
+                    String multiplicador_izq = multiplicador2.substring(1, 2);
                     multiplicador_izq_entero = Integer.parseInt(multiplicador_izq);
 
-                    String multiplicador_centro = multiplicador2.substring(2, 3); // Decenas (posición 2)
+                    String multiplicador_centro = multiplicador2.substring(2, 3);
                     multiplicador_centro_entero = Integer.parseInt(multiplicador_centro);
 
-                    String multiplicador_derecha = multiplicador2.substring(3, 4); // Unidades (posición 3)
+                    String multiplicador_derecha = multiplicador2.substring(3, 4);
                     multiplicador_derecha_entero = Integer.parseInt(multiplicador_derecha);
                 } else {
                     // Si el número es positivo, las posiciones van normales
@@ -58,9 +58,9 @@ public class Practica4 {
                 }
 
                 // Calcula los resultados
-                int resultado_izquierda = multiplicador_izq_entero * multiplicando;   // Parcial de las centenas
-                int resultado_centro = multiplicador_centro_entero * multiplicando;   // Parcial de las decenas
-                int resultado_derecha = multiplicador_derecha_entero * multiplicando; // Parcial de las unidades
+                int resultado_izquierda = multiplicador_izq_entero * multiplicando;
+                int resultado_centro = multiplicador_centro_entero * multiplicando;
+                int resultado_derecha = multiplicador_derecha_entero * multiplicando;
 
                 // Calcula el resultado total
                 int resultado_final = multiplicando * multiplicador;
