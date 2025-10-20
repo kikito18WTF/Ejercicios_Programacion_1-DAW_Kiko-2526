@@ -14,9 +14,9 @@ public class Practica5_NumerodelaSuerte {
         final int TAMANYO_MAX = 10; // Variable constante, para guardar el tamaño maximo que tiene una fecha
 
         // Variables numéricas para las tres partes de la fecha
-        int fecha_nacimiento_izq_entero = 0;    // Día
-        int fecha_nacimiento_centro_entero = 0; // Mes
-        int fecha_nacimiento_derecha_entero = 0; // Año
+        int fecha_nacimiento_izq_entero = 0;
+        int fecha_nacimiento_centro_entero = 0;
+        int fecha_nacimiento_derecha_entero = 0;
 
         // Variables para las cifras de la suma total
         int fecha_total_N1_entero = 0;
@@ -78,6 +78,8 @@ public class Practica5_NumerodelaSuerte {
                     String fecha_total_N4 = fecha_total2.substring(3, 4);
                     fecha_total_N4_entero = Integer.parseInt(fecha_total_N4);
 
+
+                    // Calcula el numero de la suerte
                     int numero_suerte = fecha_total_N1_entero + fecha_total_N2_entero + fecha_total_N3_entero + fecha_total_N4_entero;
 
                     //  Muestrar el proceso y el resultado
