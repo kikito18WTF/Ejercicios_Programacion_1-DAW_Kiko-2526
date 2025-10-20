@@ -14,8 +14,9 @@ public class ActividadHasnextInt {
         System.out.println("ELIGE UN MDOO: ");
         System.out.println("1. AÑO DE NACIMIENTO");
         System.out.println("2. EDAD");
+        System.out.println("------------");
 
-        String modo = entrada.next();
+        int modo = entrada.nextInt();
 
         LocalDateTime hoy = LocalDateTime.now();
         int anyo_actual = hoy.getYear();
@@ -23,47 +24,46 @@ public class ActividadHasnextInt {
 
         boolean error = false;
 
-        if (modo.equals("1")){
+        switch (modo){
+            case 1:
+                System.out.println("Introduce año de nacimiento: ");
+                String anyo = entrada.next();
 
-            System.out.println("Introduce año de nacimiento: ");
-            String anyo = entrada.next();
+                try {
+                    anyo_nacimiento = Integer.parseInt(anyo);
+                }catch (NumberFormatException e1){
+                    System.out.println("El formato del año no es correcto" + e1.getMessage());
+                    return;
+                }
+                break;
+            case 2:
+                int edad = 0;
 
+                System.out.println("Introduce tu edad: ");
 
-            try {
-                anyo_nacimiento = Integer.parseInt(anyo);
-            }catch (NumberFormatException e1){
-                System.out.println("El formato del año no es correcto" + e1.getMessage());
-                error=true;
-            }
+                if (entrada.hasNextInt()){
+                    edad = entrada.nextInt();
+                }else {
+                    System.out.println("El formato de la edad es incorrecto");
+                    return;
+                }
 
-            if (anyo_nacimiento < 1900 || anyo_nacimiento > anyo_actual){
-                System.out.println("El año introducido no es correcto");
-                error=true;
-            }
+                if (edad < 0){
+                    System.out.println("La edad introducida no es correcta");
+                    error=true;
+                }else {
+                    anyo_nacimiento = anyo_actual - edad;
 
-        } else if (modo.equals("2")) {
-            System.out.println("Introduce tu edad: ");
-            int edad = 0;
+                }
 
-            if (entrada.hasNextInt()){
-                edad = entrada.nextInt();
-            }else {
-                System.out.println("El formato de la edad es incorrecto");
-                error=true;
-            }
-
-            if (edad < 0){
-                System.out.println("La edad introducida no es correcta");
-                error=true;
-            }else {
-                anyo_nacimiento = anyo_actual - edad;
-
-            }
-
-        }else {
-            System.out.println("ERROR. No hay tercer modo");
-            error=true;
+                break;
+            default:
+                    System.out.println("No hay tercer modo");
+                    break;
         }
+
+
+
         if (!error){
             if (anyo_nacimiento>=1900 && anyo_nacimiento<=1927){
                 System.out.println("Eres de la generacion fosil");
