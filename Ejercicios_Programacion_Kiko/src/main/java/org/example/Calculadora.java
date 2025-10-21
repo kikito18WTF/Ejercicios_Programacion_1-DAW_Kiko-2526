@@ -8,8 +8,8 @@ public class Calculadora {
         Scanner entrada = new Scanner(System.in);
 
 
-        int operando = 0;
-        int operando2 = 0;
+        double operando = 0;
+        double operando2 = 0;
 
         double resultado_sumar=0;
         double resultado_resta=0;
@@ -51,7 +51,7 @@ public class Calculadora {
 
 
 
-            if (operacion.equals("+")  || operacion.equals("-") || operacion.equals("X") || operacion.equals("/")){
+            if (!operacion.equals("R") ){
                 try {
                     System.out.println("> Introduce el segundo operando: ");
                     operando2 = entrada.nextInt();
