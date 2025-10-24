@@ -102,12 +102,20 @@ public class Bucles {
 //        System.out.println("El resultado es " + suma);
 
 
-        System.out.println("Introduce un numero");
-        int num = entrada.nextInt();
+//        int n = 7;
+//
+//        int factorial=1;
+//
+//
+//
+//        for (int i=n; i>0 ; i-- ){
+//
+//            factorial *=i;
+//            System.out.println(factorial);
+//
+//        }
 
-        for (int i=1; i<num ; i++ ){
 
-        }
 
 
 
