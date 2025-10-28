@@ -33,8 +33,7 @@ public class Pre_examen {
             }else {
                 cont_igual_0++;
             }
-
-
+            
         }
 
         System.out.println("Estos son la cantidad de numeros mayores que 0: "+ cont_may_0);
@@ -44,7 +43,7 @@ public class Pre_examen {
 
 
 
-        
+
 
     }
 

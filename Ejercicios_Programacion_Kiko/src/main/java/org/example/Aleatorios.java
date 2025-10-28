@@ -81,16 +81,16 @@ public class Aleatorios {
         String nums = "0123456789";
         String todos = mayus + minus + nums;
 
-        int longitud = 8 + aleatorio.nextInt(5); // entre 8 y 12
+        int longitud = 8 + aleatorio.nextInt(5);
 
         String contra = "";
 
-        // Asegurar al menos uno de cada tipo
+
         contra += mayus.charAt(aleatorio.nextInt(mayus.length()));
         contra += minus.charAt(aleatorio.nextInt(minus.length()));
         contra += nums.charAt(aleatorio.nextInt(nums.length()));
 
-        // Rellenar el resto
+
         while (contra.length() < longitud) {
             contra += todos.charAt(aleatorio.nextInt(todos.length()));
         }
