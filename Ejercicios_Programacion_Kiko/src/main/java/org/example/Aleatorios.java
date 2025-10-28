@@ -45,8 +45,7 @@ public class Aleatorios {
 //         System.out.println(contra);
 
 
-         //Ejercicio 3
-
+        //Ejercicio 3
 
 
 //        int min;
@@ -77,24 +76,46 @@ public class Aleatorios {
         // Ejercicio4
 
 
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 
-         String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        int longitud = 8 + aleatorio.nextInt(5);
 
-         String contra ="";
-
-         for (int i = 0; i<12; i++){
-
-             contra += caracteres.charAt(aleatorio.nextInt(caracteres.length()-1));
-
-         }
-
-         System.out.println(contra);
+        String contra = "";
+        boolean mayus = false;
+        boolean minu = false;
+        boolean numero = false;
 
 
+        do {
+            contra = "";
+            mayus = false;
+            minu = false;
+            numero = false;
 
+            for (int i = 0; i < longitud; i++) {
+                char contra_unico = caracteres.charAt(aleatorio.nextInt(caracteres.length()));
+                contra += contra_unico;
 
+                if (contra_unico >= 'A' && contra_unico <= 'Z') {
+                    mayus = true;
+                } else if (contra_unico >= 'a' && contra_unico <= 'z') {
+                    minu = true;
+                } else if (contra_unico >= '0' && contra_unico <= '9') {
+                    numero = true;
+                }
+
+            }
+
+        } while (!mayus || !minu || !numero); // repetir hasta que cumpla
+
+        System.out.println("Longitud: " + longitud);
+        System.out.println("Contraseña generada: " + contra);
     }
+
+
+
+
 
 
 }
