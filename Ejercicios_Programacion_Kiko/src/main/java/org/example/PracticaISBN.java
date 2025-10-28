@@ -87,11 +87,11 @@ public class PracticaISBN {
                     } else if (tamanyo < TAMANYO_MAX_ISBN) {
                         System.out.println("ERROR. Falta de caracteres");
                     } else {
-                        int peso_falta = 0;  // peso del carácter que falta
+                        int peso_falta = 0;  // peso del caracter que falta
                         int resultado;       // valor del digito que falta
                         suma = 0;            // reinicia la suma
 
-                        // Recorre el ISBN carácter a carácter
+                        // Recorre el ISBN caracter a caracter
                         for (int i = 0; i < 10; i++) {
                             char isbn_unico = isbn.charAt(i);
 
