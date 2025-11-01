@@ -43,7 +43,7 @@ public class Pre_examen {
 
         //EJERCICIO 2
 
-<<<<<<< HEAD
+
 //        int base =0;
 //
 //        int expo=0;
@@ -63,14 +63,11 @@ public class Pre_examen {
 //            resultado = resultado * base;
 //
 //       }
-//
-//
-//
-//
 //        System.out.println("El resultado es "+ resultado);
 
-        
 
+
+        
 
 
 
