@@ -68,19 +68,8 @@ public class Pre_examen {
 //
 //
 //        System.out.println("El resultado es "+ resultado);
-=======
-            } else if (num2 < 0) {
-                cont_min_0++;
-            }else {
-                cont_igual_0++;
-            }
 
-        }
-
-        System.out.println("Estos son la cantidad de numeros mayores que 0: "+ cont_may_0);
-        System.out.println("Estos son la cantidad de numeros menores que 0: "+ cont_min_0);
-        System.out.println("Estos son la cantidad de numeros iguales que 0: "+ cont_igual_0);
->>>>>>> 9a6c3e4 (cambios)
+        
 
 
 
