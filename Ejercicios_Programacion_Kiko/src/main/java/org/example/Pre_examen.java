@@ -65,10 +65,7 @@ public class Pre_examen {
 //       }
 //        System.out.println("El resultado es "+ resultado);
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 59ebd16 (hello)
 
         
 
