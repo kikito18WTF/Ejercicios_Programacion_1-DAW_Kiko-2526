@@ -118,29 +118,90 @@ public class Vectores {
         //EJ 3
         Scanner entrada = new Scanner(System.in);
 
-        int cant_vectores []= new int[25];
-
-        for (int i = 0; i < cant_vectores.length ; i++) {
-
-            cant_vectores[i] = aleatorio.nextInt(101);
-            System.out.println("Numero "+ i + " "+ cant_vectores[i]);
-        }
-
-
-        System.out.println("Ingresa un numero para buscar [0,100]: ");
-        int buscar_num= entrada.nextInt();
-
-        for (int i = 0; i <cant_vectores.length ; i++) {
-
-            if (cant_vectores[i]== buscar_num){
-
-            }
-
-        }
+//        int cant_vectores []= new int[25];
+//
+//        for (int i = 0; i < cant_vectores.length ; i++) {
+//
+//            cant_vectores[i] = aleatorio.nextInt(101);
+//
+//        }
+//
+//        System.out.println(Arrays.toString(cant_vectores));
+//
+//        System.out.println("Ingresa un numero para buscar [0,100]: ");
+//        int buscar_num= entrada.nextInt();
+//
+//        int contador = 0;
+//
+//        for (int i = 0; i <cant_vectores.length ; i++) {
+//
+//            if (cant_vectores[i]== buscar_num){
+//                contador++;
+//            }
+//
+//        }
+//
+//        System. out.println("El numero "+ buscar_num+ " aparece "+ contador+" veces en el array");
                 
 
 
+        //EJ 4
+
+//        int vector[] = {1,3,5,7,9};
+//
+//
+//        int nuevo_vector[] = new int[vector.length-1];
+//        System.out.println("Ingresa el indice a eliminar: ");
+//        int pos = entrada.nextInt();
+//
+//        for (int i = 0; i < nuevo_vector.length ; i++) {
+//
+//
+//            if (i>=pos){
+//                nuevo_vector[i]=vector[i+1];
+//            }else {
+//                nuevo_vector[i]=vector[i];
+//            }
+//
+//
+//
+//        }
+//
+//        System.out.println(Arrays.toString(nuevo_vector));
 
 
+        //EJ 5
+//
+//        int vector[] = {1,2,3,4,5};
+//
+//        int aux=0;
+//
+//        for (int i = 0; i < vector.length ; i++) {
+//
+//            aux = vector[i];
+//            vector[i]=vector[vector.length-1];
+//            vector[vector.length-1]=aux;
+//
+//        }
+//
+//        System.out.println(Arrays.toString(vector));
+
+
+        //EJ 6
+
+        int vector[] = {1,2,3,2,1};
+
+        for (int i = 0; i < vector.length ; i++) {
+
+            if (vector[i]!=vector[vector.length-1-i]){
+                System.out.println("No es");
+                break;
+            }
+
+
+
+        }
+
+        System.out.println("Es palindromo");
     }
 }
