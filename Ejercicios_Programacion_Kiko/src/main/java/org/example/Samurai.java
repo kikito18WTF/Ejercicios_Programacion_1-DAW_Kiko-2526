@@ -76,8 +76,9 @@ public class Samurai {
         System.out.println(samurai_aleatorio);
         System.out.println("EMPIEZA LA BATALLA");
         System.out.println("La batalla inicia con el Samurai "+samurai_aleatorio);
-        for (int i = samurai_aleatorio; i < equipo1.length; i++) {
+        for (int i = samurai_aleatorio; i < equipo1.length+1; i++) {
 
+            System.out.println("Samurai "+ i);
 
 
         }
