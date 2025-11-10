@@ -12,7 +12,7 @@ public class Samurai {
 
         Random aleatorio = new Random();
 
-        boolean repetir = false;
+
         final int POTENCIA_MAX = 30;
 
         int cont = 0;
@@ -23,32 +23,64 @@ public class Samurai {
 
         String equipo2[] = new String[7];
 
+        String equipo[] = new String[7];
+
+
+
         do {
 
             cont =0; //se reinicia contador a 0 cada vuelta al bucle
             System.out.println("Equipo "+equipo_cont);
             System.out.println("Introduce potencia de los samurais: ");
-            String equipoo1 = entrada.nextLine();
-            equipo1 = equipoo1.split(" ");
+            String  equipos = entrada.nextLine();
+            equipo = equipos.split(" ");
 
-            for (int i = 0; i < equipo1.length; i++) {
+            for (int i = 0; i < equipo.length; i++) {
 
-                cont += Integer.parseInt(equipo1[i]);
+
+                cont += Integer.parseInt(equipo[i]);
+
 
             }
+
+
 
             System.out.println("El resultado es "+cont);
 
+
             if (cont != POTENCIA_MAX) {
                 System.out.println("ERROR. La potencia total no suma 30");
-                repetir = true;
+
             } else {
                 System.out.println("EQUIPO COMPLETADO");
-               equipo_cont++;
+                if (equipo_cont != 1) {
+                    equipo2 = equipo.clone();
+                } else {
+                    equipo1 = equipo.clone();
+                }
+                equipo_cont++;
+
+
+
 
 
             }
-        } while (repetir == true);
+
+
+
+
+
+        } while (equipo_cont <= 2);
+
+        int samurai_aleatorio = aleatorio.nextInt(6);
+        System.out.println(samurai_aleatorio);
+        System.out.println("EMPIEZA LA BATALLA");
+        System.out.println("La batalla inicia con el Samurai "+samurai_aleatorio);
+        for (int i = samurai_aleatorio; i < equipo1.length; i++) {
+
+
+
+        }
 
 
     }
